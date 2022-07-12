@@ -6,6 +6,7 @@ export default function NavBar() {
 
   return (
     <nav>
+      <img src="/n_logo.png" />
       <Link href={"/"}>
         <a className={router.pathname === "/" ? "active" : ""}>Home</a>
       </Link>
@@ -13,6 +14,11 @@ export default function NavBar() {
         <a className={router.pathname === "/about" ? "active" : ""}>About</a>
       </Link>
       <style jsx>{`
+        img {
+          border: none;
+          height: 50px;
+          margin-top: 10px;
+        }
         a {
           text-decoration: none;
         }
